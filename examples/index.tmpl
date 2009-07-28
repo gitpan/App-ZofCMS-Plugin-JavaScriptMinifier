@@ -1,0 +1,15 @@
+use strict;
+use warnings;
+
+{
+    body => \'index.tmpl',
+    title => '',
+    
+    plugins => [
+        qw/JavaScriptMinifier/,
+    ],
+    
+    plug_js_minifier => {
+        file        => 'main.js',
+    },
+}

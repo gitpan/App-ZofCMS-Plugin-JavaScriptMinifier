@@ -1,0 +1,49 @@
+App-ZofCMS-Plugin-JavaScriptMinifier
+
+The module is a plugin for L<App::ZofCMS> that provides means to send minified JavaScript files.
+
+This documentation assumes you've read L<App::ZofCMS>, L<App::ZofCMS::Config> and L<App::ZofCMS::Template>
+
+=head1 WTF IS MINIFIED?
+
+Minified means that all the useless stuff (which means whitespace, etc)
+will be stripped off the JavaScript file to save a few bytes. See L<JavaScript::Minifier> for more info.
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Build.PL
+	./Build
+	./Build test
+	./Build install
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc App::ZofCMS::Plugin::JavaScriptMinifier
+
+You can also look for information at:
+
+    RT, CPAN's request tracker
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=App-ZofCMS-Plugin-JavaScriptMinifier
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/App-ZofCMS-Plugin-JavaScriptMinifier
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/App-ZofCMS-Plugin-JavaScriptMinifier
+
+    Search CPAN
+        http://search.cpan.org/dist/App-ZofCMS-Plugin-JavaScriptMinifier/
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2009 'Zoffix
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
