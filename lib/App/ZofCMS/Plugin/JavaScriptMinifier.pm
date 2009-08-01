@@ -3,7 +3,7 @@ package App::ZofCMS::Plugin::JavaScriptMinifier;
 use warnings;
 use strict;
 
-our $VERSION = '0.0101';
+our $VERSION = '0.0102';
 use JavaScript::Minifier qw/minify/;
 use base 'App::ZofCMS::Plugin::Base';
 
@@ -91,7 +91,20 @@ B<Mandatory>. You need to include the plugin to the list of plugins to execute.
         cache       => 1, # default value
     },
 
-B<Mandatory>. Takes a hashref as a value; individual keys can be set in both Main Config
+    plug_js_minifier => sub {
+        my ( $t, $q, $config ) = @_;
+        return {
+            file        => 'main.js',
+            auto_output => 1,
+            cache       => 1,
+        };
+    },
+
+B<Mandatory>. Takes a hashref or a subref as a value. If subref is specified,
+its return value will be assigned to C<plug_js_minifier> as if it was already there. If sub returns
+an C<undef>, then plugin will stop further processing. The C<@_> of the subref will
+contain (in that order): ZofCMS Tempalate hashref, query parameters hashref and
+L<App::ZofCMS::Config> object. Individual keys can be set in both Main Config
 File and ZofCMS Template, if the same key set in both, the value in ZofCMS Template will
 take precedence. The following keys/values are accepted:
 
