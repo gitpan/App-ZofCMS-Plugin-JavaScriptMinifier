@@ -3,8 +3,8 @@ package App::ZofCMS::Plugin::JavaScriptMinifier;
 use warnings;
 use strict;
 
-our $VERSION = '0.0102';
-use JavaScript::Minifier qw/minify/;
+our $VERSION = '0.0103';
+use JavaScript::Minifier (qw/minify/);
 use base 'App::ZofCMS::Plugin::Base';
 
 sub _key { 'plug_js_minifier' }
@@ -42,6 +42,8 @@ sub _do {
 }
 1;
 __END__
+
+=encoding utf8
 
 =head1 NAME
 

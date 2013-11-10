@@ -1,8 +1,11 @@
 Revision history for App-ZofCMS-Plugin-JavaScriptMinifier
 
-0.0102  July 31, 2009
-        Added missing part of docs
+0.0103  2013-11-09
+        - Minor fixes to comply with specs and Kwalitee game
 
-0.0101  July 27, 2009
-        First version, released on an unsuspecting world.
+0.0102  2009-07-31
+        - Added missing part of docs
+
+0.0101  2009-07-27
+        - First version, released on an unsuspecting world.
 

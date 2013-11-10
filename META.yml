@@ -1,24 +1,26 @@
 ---
-name: App-ZofCMS-Plugin-JavaScriptMinifier
-version: 0.0102
+abstract: 'plugin for minifying JavaScript files'
 author:
   - "'Zoffix <'zoffix@cpan.org'>"
-abstract: plugin for minifying JavaScript files
-license: perl
-resources:
-  license: http://dev.perl.org/licenses/
 build_requires:
   Test::More: 0
-requires:
-  App::ZofCMS::Plugin::Base: 0.0103
-  JavaScript::Minifier: 1.05
 configure_requires:
-  Module::Build: 0.34
-provides:
-  App::ZofCMS::Plugin::JavaScriptMinifier:
-    file: lib/App/ZofCMS/Plugin/JavaScriptMinifier.pm
-    version: 0.0102
-generated_by: Module::Build version 0.34
+  Module::Build: 0
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.132830'
+license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
+name: App-ZofCMS-Plugin-JavaScriptMinifier
+provides:
+  App::ZofCMS::Plugin::JavaScriptMinifier:
+    file: lib/App/ZofCMS/Plugin/JavaScriptMinifier.pm
+    version: 0.0103
+requires:
+  App::ZofCMS::Plugin::Base: 0.0103
+  JavaScript::Minifier: 1.05
+  perl: 5.006
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.0103

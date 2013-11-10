@@ -16,7 +16,9 @@ my $builder = Module::Build->new(
     requires => {
         'App::ZofCMS::Plugin::Base' => 0.0103,
         'JavaScript::Minifier'      => 1.05,
+        'perl' => '5.006',
     },
+    configure_requires => { 'Module::Build' => 0 },
     add_to_cleanup      => [ 'App-ZofCMS-Plugin-JavaScriptMinifier-*' ],
     create_makefile_pl => 'traditional',
 );

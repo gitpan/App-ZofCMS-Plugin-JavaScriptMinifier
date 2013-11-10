@@ -1,8 +1,10 @@
 App-ZofCMS-Plugin-JavaScriptMinifier
 
-The module is a plugin for L<App::ZofCMS> that provides means to send minified JavaScript files.
+The module is a plugin for L<App::ZofCMS> that provides means to
+send minified JavaScript files.
 
-This documentation assumes you've read L<App::ZofCMS>, L<App::ZofCMS::Config> and L<App::ZofCMS::Template>
+This documentation assumes you've read L<App::ZofCMS>,
+L<App::ZofCMS::Config> and L<App::ZofCMS::Template>
 
 =head1 WTF IS MINIFIED?
 
